@@ -60,7 +60,7 @@
 <div id="container">
   <h1 class="center">The World of Pixels</h1>
   <p class="center"><em>by <a href="http://twitter.com/kosamari">Mariko Kosaka</a></em></p>
-  <p>Explor the world of image processing and computer vision...with googly eyes.</p>
+  <p>Explore the world of image processing and computer vision...with googly eyes.</p>
   <p>I've been making a lot of demo & illustration about pixels... people often ask me If I was writing book about it. Should I ?</p><p>
   You can check out some of the talks I've given <a href="https://www.youtube.com/watch?v=-6REd8lLsPM">here</a> and <a href="https://www.youtube.com/watch?v=_H0eJw6lGZU">here</a>. If you like, click the button to let me know if I should actually write it! </p>
   <div id="buttons">
@@ -71,12 +71,11 @@
 
 </div>
 </body>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
   var msg = document.getElementById('msg')
   function ping() {
-    var request = new XMLHttpRequest();
-    request.open('GET', 'http://kosamari.com:5432/', true);
-    request.send()
+    $.get('http://kosamari.com:5432/')
     msg.innerText = "Awe Thanks ! I'll work on it o(´▽｀*)/♪ "
   }
 </script>
